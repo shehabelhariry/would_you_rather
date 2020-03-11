@@ -1,24 +1,100 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One&display=swap");
+
+.wur__header {
+  background-color: #fcad1d;
   padding: 20px;
+  max-height: 10vh;
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-family: "Fredoka One", cursive;
 }
 
 .wur {
-  display: grid;
-  grid-template-columns: 150px 150px;
-  grid-template-rows: 100px;
-  justify-content: center;
-  align-content: center;
-  grid-gap: 20px;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  height: calc(90vh - 40px);
+}
+
+.wur__options-container {
+  flex: 1;
 }
 .wur__option {
-  background-color: rgb(93, 255, 201);
+  height: calc(30vh - 20px);
+  margin-bottom: 20px;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  flex-direction: column;
+  border: 3px solid #fcad1d;
+  background-image: url("./images/food.png");
+  border-radius: 8px;
+  background-repeat: repeat;
+  background-size: contain;
+  font-family: "Fredoka One", cursive;
+  font-size: 25px;
 }
 
 .wur__none {
   text-align: center;
   cursor: pointer;
+  border: 3px solid #ff5c5c;
+  color: #ff5c5c;
+  border-radius: 8px;
+  padding: 10px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin: 0;
+}
+
+.top {
+  border: 3px solid #fcad1d;
+  background-image: url("./images/food.png");
+  border-radius: 8px;
+  background-repeat: repeat;
+  background-size: contain;
+  font-family: "Fredoka One", cursive;
+  font-size: 16px;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.top__info {
+  display: flex;
+}
+
+.top__image-container {
+  width: 60px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 4px;
+}
+.top__image-container img {
+  width: 100%;
+}
+
+.emoji-image {
+  display: block;
+  text-align: center;
+}
+
+.emoji-image img {
+  width: 60% !important;
+  height: auto !important ;
+}
+.emoji-image--small img {
+  width: 30px !important;
+  height: auto !important ;
+  margin: 0 10px !important;
+  display: inline-block;
 }
